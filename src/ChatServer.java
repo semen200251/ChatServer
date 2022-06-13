@@ -19,7 +19,7 @@ public class ChatServer {
     void sendAll(String message, String properName, String anotherName){
         for(Client client:clients){
             if(client.properName.equals(anotherName)) {
-                client.receive("from " + properName + ": " + message);
+                client.receive("from " + properName + ":  " + message);
             }
         }
     }
